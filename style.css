@@ -1,0 +1,545 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cinza claro suave para o fundo */
+    color: #343a40; /* Cinza escuro para o texto padrão */
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #28a745; /* Verde principal para títulos */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+}
+
+/* Ajuste para parágrafos dentro das colunas */
+.column p, .column ul {
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 1.05em;
+}
+
+ul li:before {
+    content: '✓';
+    color: #ffc107; /* Dourado/Amarelo para o checkmark */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* --- Navbar (Nova Seção) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha sutil no header */
+}
+
+.navbar .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    padding-left: 0; /* Remove padding extra do li geral */
+}
+
+.nav-links li:before { /* Remove o checkmark dos itens da navbar */
+    content: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffc107; /* Dourado no hover */
+}
+
+.nav-links .nav-cta {
+    background-color: #ffc107; /* Botão de CTA na nav bar */
+    color: #343a40; /* Texto escuro para contraste */
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+}
+
+.nav-links .nav-cta:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+.nav-links .fa-shopping-cart {
+    margin-right: 5px;
+}
+
+/* --- Cabeçalho (Hero Section) --- */
+header {
+    background: linear-gradient(rgba(40, 167, 69, 0.85), rgba(40, 167, 69, 0.85)), url('https://via.placeholder.com/1920x600/28a745/ffffff?text=Fundo+MarketUp+Hero') no-repeat center center/cover;
+    color: white;
+    padding: 50px 0 100px 0; /* Ajuste o padding para acomodar a navbar */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    padding-top: 50px; /* Espaço abaixo da navbar */
+}
+
+header .container h1 {
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .container p {
+    color: #e2f0ff;
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* --- Barra de Busca (Nova Seção) --- */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 50px; /* Cantos bem arredondados */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    outline: none;
+    color: #343a40;
+}
+
+.search-bar input::placeholder {
+    color: #a4b0be;
+}
+
+.search-bar button {
+    background-color: #ffc107; /* Dourado para o botão de busca */
+    color: #343a40;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.search-bar button:hover {
+    background-color: #e0a800;
+    color: white; /* Texto branco no hover */
+}
+
+.search-bar button .fas {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+/* --- Categorias Populares (Nova Seção) --- */
+.categories-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #343a40;
+    background-color: #f0f7f0; /* Fundo verde claríssimo */
+    padding: 25px 20px;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    background-color: #e8f5ed;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-item i {
+    font-size: 3em;
+    color: #28a745; /* Verde principal para ícones */
+    margin-bottom: 15px;
+}
+
+.category-item span {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* --- Produtos em Destaque (Nova Seção) --- */
+.products-section {
+    background-color: #e8f5ed; /* Outro tom de verde bem claro */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid responsivo */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px; /* Espaço para o botão */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #343a40; /* Cor mais neutra para o título do produto */
+    text-align: center; /* Centraliza o título do produto */
+}
+
+.product-card .price {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #28a745; /* Verde para o preço */
+    margin-bottom: 15px;
+}
+
+.btn-product {
+    display: inline-block;
+    background-color: #ffc107; /* Dourado para o botão */
+    color: #343a40;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-product:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+/* --- Seções Existentes (ajustes de cor) --- */
+.section:nth-of-type(3) { /* MarketUp: A Ponte Para o Seu Negócio (agora a 3ª seção) */
+    background-color: #ffffff;
+}
+
+.section:nth-of-type(4) { /* Por Que Escolher a MarketUp? (agora a 4ª seção) */
+    background-color: #f0f7f0; /* Um verde claríssimo para essa seção */
+}
+
+/* Seção de colunas */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.column h3 {
+    color: #28a745; /* Verde principal */
+    margin-bottom: 15px;
+}
+
+/* Seção "Como Funciona?" */
+.how-it-works {
+    background-color: #e8f5ed; /* Outro tom de verde bem claro */
+    padding: 80px 0;
+}
+
+/* Seção de botões (Call to Action) */
+.buttons-section {
+    background: linear-gradient(rgba(255, 193, 7, 0.85), rgba(255, 193, 7, 0.85)), url('https://via.placeholder.com/1920x400/ffc107/343a40?text=Fundo+CTA') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.buttons-section h2, .buttons-section p {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-section h2 {
+    margin-bottom: 25px;
+    font-size: 3em;
+}
+
+.buttons-section p {
+    font-size: 1.3em;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 18px 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+}
+
+.button.buy {
+    background-color: #28a745; /* Verde principal para "Comprar" */
+    border: 2px solid #28a745;
+}
+
+.button.buy:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button.sell {
+    background-color: #ffc107; /* Dourado/Amarelo para "Vender" */
+    border: 2px solid #ffc107;
+    color: #343a40; /* Texto escuro para contraste no dourado */
+}
+
+.button.sell:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40; /* Cinza escuro */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+footer p {
+    color: #e0e0e0; /* Um cinza claro para parágrafos no rodapé */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffc107; /* Dourado/Amarelo para links no rodapé */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffda6a; /* Um pouco mais claro ao passar o mouse */
+}
+
+footer .container > p:last-child a {
+    margin: 0 12px;
+    font-size: 1.1em;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #a4b0be;
+}
+
+/* Responsividade básica */
+@media (max-width: 992px) {
+    .nav-links li {
+        margin-left: 15px;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .nav-links .nav-cta {
+        width: 100%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .column {
+        min-width: unset;
+        margin-bottom: 20px;
+    }
+    .search-bar {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .search-bar input, .search-bar button {
+        width: 100%;
+        border-radius: 0;
+        padding: 12px 20px;
+    }
+    .search-bar button {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .button {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+    }
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .category-item {
+        width: 120px;
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+    }
+}
