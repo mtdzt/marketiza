@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketiza: Login ou Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="small-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Marketiza</a>
+                <ul class="nav-links">
+                    <li><a href="categories.html">Categorias</a></li>
+                    <li><a href="index.html#how-it-works-section">Como Funciona</a></li>
+                    <li><a href="vendor-dashboard.html">Para Vendedores</a></li>
+                    <li><a class="nav-cta" href="login.html">Login/Cadastro</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Acesse sua Conta</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section auth-section">
+        <div class="container">
+            <div class="auth-form-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab-btn active" onclick="showTab('login')">Login</button>
+                    <button class="auth-tab-btn" onclick="showTab('register')">Cadastrar</button>
+                </div>
+                <div id="login-tab" class="auth-form-tab active">
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Senha:</label>
+                            <input type="password" id="login-password" placeholder="********" required>
+                        </div>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        <button type="submit" class="button buy full-width">Entrar</button>
+                    </form>
+                </div>
+                <div id="register-tab" class="auth-form-tab">
+                    <form>
+                        <div class="form-group">
+                            <label for="register-name">Nome Completo:</label>
+                            <input type="text" id="register-name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email:</label>
+                            <input type="email" id="register-email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Senha:</label>
+                            <input type="password" id="register-password" placeholder="********" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirmar Senha:</label>
+                            <input type="password" id="confirm-password" placeholder="********" required>
+                        </div>
+                        <button type="submit" class="button sell full-width">Cadastrar</button>
+                    </form>
+                </div>
+                <div class="social-login">
+                    <p>Ou entre com:</p>
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou precisa de suporte? Nossa equipe está pronta para te ajudar!</p>
+            <p>
+                Email: <a href="mailto:contato@marketiza.com.br">contato@marketiza.com.br</a><br>
+                Telefone: (XX) XXXX-XXXX
+            </p>
+            <p>
+                Redes Sociais:
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </p>
+            <p class="copyright">&copy; 2025 Marketiza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para simular troca de abas de login/cadastro
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.auth-form-tab');
+            const buttons = document.querySelectorAll('.auth-tab-btn');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabName + '-tab').classList.add('active');
+            event.target.classList.add('active'); // Adiciona active ao botão clicado
+        }
+    </script>
+</body>
+</html>

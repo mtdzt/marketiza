@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketiza: Produtos de [Categoria/Busca]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="small-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Marketiza</a>
+                <ul class="nav-links">
+                    <li><a href="categories.html">Categorias</a></li>
+                    <li><a href="index.html#how-it-works-section">Como Funciona</a></li>
+                    <li><a href="vendor-dashboard.html">Para Vendedores</a></li>
+                    <li><a class="nav-cta" href="login.html">Login/Cadastro</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1 id="page-title">Resultados da Busca</h1>
+                <div class="search-bar compact-search">
+                    <input type="text" placeholder="Refinar busca...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section product-listing-page">
+        <div class="container">
+            <div class="sidebar">
+                <h3><i class="fas fa-filter"></i> Filtrar por</h3>
+                <div class="filter-group">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Eletrônicos (25)</a></li>
+                        <li><a href="#">Smartphones (12)</a></li>
+                        <li><a href="#">Acessórios (8)</a></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h4>Preço</h4>
+                    <input type="range" min="0" max="1000" value="500" class="slider">
+                    <p>R$ 0 - R$ 500</p>
+                </div>
+                <div class="filter-group">
+                    <h4>Avaliação</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (5 estrelas)</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (4+ estrelas)</a></li>
+                    </ul>
+                </div>
+                <button class="btn-filter">Aplicar Filtros</button>
+            </div>
+            <div class="main-content">
+                <div class="sort-options">
+                    <span>Ordenar por:</span>
+                    <select>
+                        <option value="relevancia">Relevância</option>
+                        <option value="menor-preco">Menor Preço</option>
+                        <option value="maior-preco">Maior Preço</option>
+                        <option value="novos">Mais Novos</option>
+                    </select>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://png.pngtree.com/png-vector/20200908/ourlarge/pngtree-a-healthy-green-lettuce-png-image_2335953.jpg" alt="Alface">
+                        <h3>Alface</h3>
+                        <p class="price">R$ 6,79 </p>
+                        <a href="product-detail.html?id=101" class="btn-product">Ver Detalhes</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://png.pngtree.com/png-clipart/20210530/original/pngtree-tomato-natural-gourmet-vegetables-png-image_6370292.jpg" alt="Fone Bluetooth">
+                        <h3>Tomate</h3>
+                        <p class="price">R$ 5,00</p>
+                        <a href="product-detail.html?id=102" class="btn-product">Ver Detalhes</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://png.pngtree.com/png-clipart/20210530/original/pngtree-onion-healthy-vegetables-png-image_6343693.jpg" alt="Smartwatch Fitness">
+                        <h3>Cebola</h3>
+                        <p class="price">R$ 7,99</p>
+                        <a href="product-detail.html?id=103" class="btn-product">Ver Detalhes</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200/ffc107/343a40?text=Notebook" alt="Seu produto">
+                        <h3>Seu produto</h3>
+                        <p class="price">R$ 3.899,00</p>
+                        <a href="product-detail.html?id=104" class="btn-product">Ver Detalhes</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200/28a745/ffffff?text=Capa+Smartphone" alt="Seu produto">
+                        <h3>Seu produto</h3>
+                        <p class="price">R$ 49,90</p>
+                        <a href="product-detail.html?id=105" class="btn-product">Ver Detalhes</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x200/ffc107/343a40?text=Mouse+Gamer" alt="Seu produto">
+                        <h3>Seu produto</h3>
+                        <p class="price">R$ 129,90</p>
+                        <a href="product-detail.html?id=106" class="btn-product">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Próxima &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou precisa de suporte? Nossa equipe está pronta para te ajudar!</p>
+            <p>
+                Email: <a href="mailto:contato@marketiza.com.br">contato@marketiza.com.br</a><br>
+                Telefone: (XX) XXXX-XXXX
+            </p>
+            <p>
+                Redes Sociais:
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </p>
+            <p class="copyright">&copy; 2025 Marketiza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const category = params.get('category');
+            const searchQuery = params.get('query'); // Para o caso de vir da busca
+
+            const pageTitleElement = document.getElementById('page-title');
+            let newTitleText = "Resultados da Busca";
+            let browserTitle = "Marketiza: Resultados da Busca";
+
+            if (category) {
+                // Mapeamento de nomes de categoria para exibição amigável
+                const categoryMap = {
+                    'eletronicos': 'Eletrônicos',
+                    'moda': 'Moda',
+                    'casa-decoracao': 'Casa e Decoração',
+                    'livros': 'Livros',
+                    'alimentos': 'Alimentos & Bebidas',
+                    'esportes': 'Esportes & Fitness',
+                    'saude-beleza': 'Saúde & Beleza',
+                    'brinquedos': 'Brinquedos & Jogos',
+                    'automotivos': 'Automotivos',
+                    'servicos': 'Serviços',
+                    'artesanato': 'Artesanato',
+                    'petshop': 'Pet Shop'
+                };
+                const friendlyCategoryName = categoryMap[category] || category.replace(/-/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                newTitleText = `Produtos em ${friendlyCategoryName}`;
+                browserTitle = `Marketiza: ${friendlyCategoryName}`;
+
+                // Opcional: Atualizar a lista de produtos (apenas para visualização estática)
+                // Você pode adicionar um array de produtos para cada categoria aqui
+                // Ex: if (category === 'eletronicos') { /* mudar as imagens/textos dos products-card */ }
+            } else if (searchQuery) {
+                newTitleText = `Resultados para "${searchQuery}"`;
+                browserTitle = `Marketiza: Busca por "${searchQuery}"`;
+                // Opcional: Atualizar o input de busca compacta com o termo buscado
+                const compactSearchInput = document.querySelector('.compact-search input[type="text"]');
+                if (compactSearchInput) {
+                    compactSearchInput.value = searchQuery;
+                }
+            }
+
+            if (pageTitleElement) {
+                pageTitleElement.textContent = newTitleText;
+            }
+            document.title = browserTitle; // Atualiza o título da aba do navegador
+        });
+    </script>
+</body>
+</html>

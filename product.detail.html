@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketiza: Detalhes do Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="small-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Marketiza</a>
+                <ul class="nav-links">
+                    <li><a href="categories.html">Categorias</a></li>
+                    <li><a href="index.html#how-it-works-section">Como Funciona</a></li>
+                    <li><a href="vendor-dashboard.html">Para Vendedores</a></li>
+                    <li><a class="nav-cta" href="login.html">Login/Cadastro</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Detalhes do Produto</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section product-detail-page">
+        <div class="container product-detail-content">
+            <div class="product-images">
+                <img src="https://via.placeholder.com/500x400/28a745/ffffff?text=Produto+Principal" alt="Imagem Principal do Produto">
+                <div class="thumbnail-images">
+                    <img src="https://via.placeholder.com/100x80/28a745/ffffff?text=Thumb1" alt="Miniatura 1">
+                    <img src="https://via.placeholder.com/100x80/28a745/ffffff?text=Thumb2" alt="Miniatura 2">
+                    <img src="https://via.placeholder.com/100x80/28a745/ffffff?text=Thumb3" alt="Miniatura 3">
+                </div>
+            </div>
+            <div class="product-info">
+                <h2>Nome Completo do Produto Incrível</h2>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(4.5 estrelas, 120 avaliações)</span>
+                </div>
+                <p class="product-price">R$ 1.299,90</p>
+                <p class="product-description">
+                    Este é o produto perfeito para você! Com alta qualidade e funcionalidades inovadoras, ele irá revolucionar a sua experiência. Design elegante, durabilidade excepcional e performance inigualável. Aproveite essa oferta por tempo limitado!
+                </p>
+                <div class="product-options">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <label for="color">Cor:</label>
+                    <select id="color">
+                        <option value="preto">Preto</option>
+                        <option value="branco">Branco</option>
+                        <option value="vermelho">Vermelho</option>
+                    </select>
+                </div>
+                <div class="product-actions">
+                    <a href="cart.html" class="button buy"><i class="fas fa-cart-plus"></i> Adicionar ao Carrinho</a>
+                    <a href="cart.html" class="button sell">Comprar Agora</a>
+                </div>
+                <div class="seller-info">
+                    <h3>Vendido por: <a href="#">Nome do Vendedor</a></h3>
+                    <p><i class="fas fa-check-circle"></i> Vendedor Verificado</p>
+                    <p><i class="fas fa-shipping-fast"></i> Envio Rápido</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product-reviews-section">
+            <h2>Avaliações de Clientes</h2>
+            <div class="review-summary">
+                <div class="overall-rating">
+                    <span>4.5</span> <i class="fas fa-star"></i>
+                    <p>Média de Avaliações</p>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">5 <i class="fas fa-star"></i> <div class="bar-fill" style="width: 70%;"></div></div>
+                    <div class="rating-bar">4 <i class="fas fa-star"></i> <div class="bar-fill" style="width: 20%;"></div></div>
+                    <div class="rating-bar">3 <i class="fas fa-star"></i> <div class="bar-fill" style="width: 5%;"></div></div>
+                    <div class="rating-bar">2 <i class="fas fa-star"></i> <div class="bar-fill" style="width: 3%;"></div></div>
+                    <div class="rating-bar">1 <i class="fas fa-star"></i> <div class="bar-fill" style="width: 2%;"></div></div>
+                </div>
+            </div>
+            <div class="customer-reviews">
+                <div class="review-card">
+                    <p class="review-author">**João S.** - 2 dias atrás</p>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-comment">"Produto excelente! Superou minhas expectativas. Entrega rápida e o material é de ótima qualidade."</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-author">**Maria L.** - 1 semana atrás</p>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-comment">"Muito bom, mas a cor é um pouco diferente da foto. Mesmo assim, adorei e recomendo!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou precisa de suporte? Nossa equipe está pronta para te ajudar!</p>
+            <p>
+                Email: <a href="mailto:contato@marketiza.com.br">contato@marketiza.com.br</a><br>
+                Telefone: (XX) XXXX-XXXX
+            </p>
+            <p>
+                Redes Sociais:
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </p>
+            <p class="copyright">&copy; 2025 Marketiza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

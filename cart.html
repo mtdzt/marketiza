@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketiza: Meu Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="small-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Marketiza</a>
+                <ul class="nav-links">
+                    <li><a href="categories.html">Categorias</a></li>
+                    <li><a href="index.html#how-it-works-section">Como Funciona</a></li>
+                    <li><a href="vendor-dashboard.html">Para Vendedores</a></li>
+                    <li><a class="nav-cta" href="login.html">Login/Cadastro</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>Meu Carrinho de Compras</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="section cart-section">
+        <div class="container">
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x100/28a745/ffffff?text=Smartphone+X" alt="Tomate">
+                    <div class="item-details">
+                        <h3>Tomate</h3>
+                        <p class="item-price">R$ 12,99</p>
+                        <div class="item-quantity">
+                            <label for="qty-1">Qtd:</label>
+                            <input type="number" id="qty-1" value="1" min="1">
+                        </div>
+                    </div>
+                    <button class="remove-item"><i class="fas fa-trash-alt"></i> Remover</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/100x100/ffc107/343a40?text=Fone+Bluetooth" alt="Alface">
+                    <div class="item-details">
+                        <h3>Alface</h3>
+                        <p class="item-price">R$ 24,99</p>
+                        <div class="item-quantity">
+                            <label for="qty-2">Qtd:</label>
+                            <input type="number" id="qty-2" value="2" min="1">
+                        </div>
+                    </div>
+                    <button class="remove-item"><i class="fas fa-trash-alt"></i> Remover</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span>R$ 37,98</span>
+                </div>
+                <div class="summary-line">
+                    <span>Frete:</span>
+                    <span>R$ 25,00</span>
+                </div>
+                <div class="summary-line total">
+                    <span>Total:</span>
+                    <span>R$ 62,98</span>
+                </div>
+                <a href="#" class="button buy full-width-button">Finalizar Compra <i class="fas fa-arrow-right"></i></a>
+                <a href="index.html" class="continue-shopping">Continuar Comprando</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou precisa de suporte? Nossa equipe está pronta para te ajudar!</p>
+            <p>
+                Email: <a href="mailto:contato@marketiza.com.br">contato@marketiza.com.br</a><br>
+                Telefone: (XX) XXXX-XXXX
+            </p>
+            <p>
+                Redes Sociais:
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </p>
+            <p class="copyright">&copy; 2025 Marketiza. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
